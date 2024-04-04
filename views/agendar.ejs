@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Exames</title>
+    <link rel="stylesheet" href="/css/agendar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4">Agendamento de Exames</h1>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="exame" class="form-label">Tipo de Exame</label>
+                        <select class="form-select" id="exame">
+                            <option selected>Selecione o tipo de exame</option>
+                            <option>Exame de Sangue</option>
+                            <option>Raio-X</option>
+                            <option>Ultrassom</option>
+                            <option>Ressonância Magnética</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="medico" class="form-label">Médico</label>
+                        <select class="form-select" id="medico">
+                            <option selected>Selecione o médico</option>
+                            <option>Dr. João Silva</option>
+                            <option>Dra. Maria Santos</option>
+                            <option>Dr. Pedro Almeida</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="data" class="form-label">Dias Disponíveis</label>
+                        <input type="date" class="form-control" id="data">
+                    </div>
+                    <div class="mb-3">
+                        <label for="preco" class="form-label">Preço</label>
+                        <input type="text" class="form-control" id="preco" placeholder="R$">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Agendar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
