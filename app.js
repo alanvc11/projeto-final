@@ -11,12 +11,14 @@ const cadastrarRouters = require('./routers/cadastrar');
 const logarRouters = require('./routers/logar');
 const agendarRouters = require('./routers/agendamento');
 const planosRouters = require('./routers/plano');
+const paginaInicialRouters = require('./routers/paginaInicial');
 
 app.use('/', indexRouters);
 app.use('/cadastrar', cadastrarRouters);
 app.use('/logar', logarRouters);
 app.use('/agendamento', agendarRouters);
 app.use('/plano', planosRouters);
+app.use('/paginaInicial', paginaInicialRouters);
 
 
 // const loginRouters = require('./routers/login');
